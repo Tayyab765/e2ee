@@ -70,7 +70,7 @@ async function aesGcmEncryptRaw(keyBytes, ivBytes, ptBytes, aadBytes) {
 }
 
 // Proxy config
-const REAL_SERVER = process.env.REAL_SERVER || 'http://localhost:4000';
+const REAL_SERVER = process.env.REAL_SERVER || 'https://localhost:4000';
 const PROXY_PORT = parseInt(process.env.PROXY_PORT || '4100', 10);
 
 // Map proxy client sockets to upstream sockets
