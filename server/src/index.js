@@ -21,6 +21,7 @@ const allowedOrigins = new Set([
   'https://localhost:5173', // Always allow local client for development
   'http://localhost:5173',
   'https://e2ee-six.vercel.app/',
+  "https://e2ee-9s4gc2bn6-tayyab765s-projects.vercel.app",
   process.env.CLIENT_ORIGIN,
 ].filter(Boolean));
 app.use(cors({
