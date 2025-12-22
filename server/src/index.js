@@ -20,6 +20,7 @@ const app = express();
 const allowedOrigins = new Set([
   'https://localhost:5173', // Always allow local client for development
   'http://localhost:5173',
+  'https://e2ee-six.vercel.app/',
   process.env.CLIENT_ORIGIN,
 ].filter(Boolean));
 app.use(cors({
@@ -49,7 +50,12 @@ const sslOptions = {
 const httpsServer = https.createServer(sslOptions, app);
 const io = new Server(httpsServer, {
   cors: {
-    origin: "https://localhost:5173",
+    origin: [
+      "https://localhost:5173",
+      "http://localhost:5173",
+      "https://e2ee-six.vercel.app/",
+      process.env.CLIENT_ORIGIN,
+    ].filter(Boolean),
     methods: ["GET", "POST"],
   },
 });
