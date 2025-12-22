@@ -20,7 +20,7 @@ export default function Chat({ session, onLogout }) {
   const http = useMemo(() => api(session.token), [session.token]);
   const socket = useMemo(() => {
     console.log('[socket] creating socket for user', session.user.id);
-    return io('https://localhost:4000', {
+    return io(import.meta.env.VITE_WS_URL, {
       auth: { userId: session.user.id },
       secure: true,
       rejectUnauthorized: false

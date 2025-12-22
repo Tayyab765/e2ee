@@ -18,9 +18,9 @@ dotenv.config();
 
 const app = express();
 const allowedOrigins = new Set([
-  'https://localhost:5173',
+  'https://localhost:5173', // Always allow local client for development
   'http://localhost:5173',
-  process.env.CLIENT_ORIGIN || ''
+  process.env.CLIENT_ORIGIN,
 ].filter(Boolean));
 app.use(cors({
   origin: function (origin, callback) {
