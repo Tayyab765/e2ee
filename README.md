@@ -1,3 +1,18 @@
+# End-to-End Encrypted Chat Application
+
+This is a secure chat application with end-to-end encryption.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F<YOUR_GITHUB_USERNAME>%2F<YOUR_REPO_NAME>)
+
+## Video Demonstration
+
+[Watch the video demonstration on Loom](https://www.loom.com/share/66f7bfcf066a406da58b490f3a41b9ff)
+
+## Deployment Links
+
+-   **Client (Vercel):** [https://e2ee-d5b301w44-tayyab765s-projects.vercel.app/](https://e2ee-d5b301w44-tayyab765s-projects.vercel.app/)
+-   **Server (Railway):** [https://e2ee-production.up.railway.app/api](https://e2ee-production.up.railway.app/api)
+
 # e2eeV1 – End-to-End Encrypted Messaging and File Sharing
 
 This project is a complete applied Information Security system implementing end-to-end encryption (E2EE) for text and file sharing. It uses a custom authenticated key exchange (AKE) built on ECDH with identity signatures (ECDSA), AES-256-GCM for confidentiality and integrity, strict anti-replay protections, and comprehensive auditing.

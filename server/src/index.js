@@ -22,6 +22,7 @@ const allowedOrigins = new Set([
   'http://localhost:5173',
   'https://e2ee-six.vercel.app/',
   "https://e2ee-9s4gc2bn6-tayyab765s-projects.vercel.app",
+  "https://e2ee-d5b301w44-tayyab765s-projects.vercel.app",
   process.env.CLIENT_ORIGIN,
 ].filter(Boolean));
 app.use(cors({
@@ -56,6 +57,7 @@ const io = new Server(httpsServer, {
       "http://localhost:5173",
       "https://e2ee-six.vercel.app/",
       "https://e2ee-9s4gc2bn6-tayyab765s-projects.vercel.app",
+      "https://e2ee-d5b301w44-tayyab765s-projects.vercel.app",
       process.env.CLIENT_ORIGIN,
     ].filter(Boolean),
     methods: ["GET", "POST"],
